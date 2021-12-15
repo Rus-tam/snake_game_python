@@ -31,12 +31,12 @@ class Snake:
             self.head.setheading(DOWN)
 
     def right(self):
-        if self.head.heading() != RIGHT:
-            self.head.setheading(LEFT)
-
-    def left(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
+    def left(self):
+        if self.head.heading() != RIGHT:
+            self.head.setheading(LEFT)
 
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
